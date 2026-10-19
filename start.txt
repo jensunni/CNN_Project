@@ -1,0 +1,6 @@
+pip install -r requirements.txt
+unzip archive.zip -d data
+python train.py --data data --epochs 25
+python train.py --data data                                   
+python train.py --data data --model small --crop 16           
+python train.py --data data --model transfer --finetune 10    
